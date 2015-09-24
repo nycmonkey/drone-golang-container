@@ -9,7 +9,7 @@ MAINTAINER nycmonkey@gmail.com
 ENV GOPATH /usr/local/lib/go
 RUN apt-get -y update --no-install-recommends
 RUN apt-get -y install --no-install-recommends golang-go bzr git ca-certificates openssh-client
-RUN go get launchpad.net/godeb
+RUN go get gopkg.in/niemeyer/godeb.v1/cmd/godeb
 RUN /usr/local/lib/go/bin/godeb --help
 RUN apt-get -y remove golang-go
 RUN apt-get -y autoremove
