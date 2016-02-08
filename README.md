@@ -1,5 +1,5 @@
 # drone-golang-container
-A simple Docker container for [Drone](https://drone.io) to use while building and testing your [Go](https://golang.org) projects during [continuous integration](http://www.martinfowler.com/articles/continuousIntegration.html).
+A simple Docker container for [Drone](https://drone.io) to use while building and testing your [Go](https://golang.org) projects during [continuous integration](http://bit.ly/1S9Y4lt).
 
 ## Usage
 
@@ -34,8 +34,8 @@ Once you can build your project with `go install` and test it with `go test`, ru
 $ godep save -r
 ```
 
-## Pointers for setting up your own [continuous integration](http://www.martinfowler.com/articles/continuousIntegration.html) server
+## Pointers for setting up your own [continuous integration](http://bit.ly/1S9Y4lt) server
 
-I use a [Digital Ocean](https://digitalocean.com/) "droplet" running [Drone](https://github.com/drone/drone) on [CoreOS linux](https://https://coreos.com).  It costs me $10/month for the droplet plus the cost of registering a domain and maintaining a signed SSL certificate.  Digital Ocean has a helpful setup guide [here](https://www.digitalocean.com/community/tutorials/how-to-perform-continuous-integration-testing-with-drone-io-on-coreos-and-docker).
+I use a [Digital Ocean](https://digitalocean.com/) "droplet" running [Drone](https://github.com/drone/drone) on [CoreOS linux](https://https://coreos.com).  It costs me $10/month for the droplet plus the cost of registering a domain and maintaining a signed SSL certificate.  Digital Ocean has a helpful setup guide [here](http://do.co/1T7rCQV).
 
-By default, CoreOS updates itself automatically and reboots.  To ensure that [Drone](https://github.com/drone/drone) starts up upon reboot, you can write a [systemd unit file](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/).
+By default, CoreOS updates itself automatically and reboots.  To ensure that [Drone](https://github.com/drone/drone) starts up upon reboot, you can write a [systemd unit file](http://bit.ly/1ojlYP4).
