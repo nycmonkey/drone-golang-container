@@ -38,4 +38,4 @@ $ godep save -r
 
 I use a [Digital Ocean](https://digitalocean.com/) "droplet" running [Drone](https://github.com/drone/drone) on [CoreOS linux](https://https://coreos.com).  It costs me $10/month for the droplet plus the cost of registering a domain and maintaining a signed SSL certificate.  Digital Ocean has a helpful setup guide [here](https://www.digitalocean.com/community/tutorials/how-to-perform-continuous-integration-testing-with-drone-io-on-coreos-and-docker).
 
-One thing the Digital Ocean guide does not address is how to survive a reboot on CoreOS, which updates itself and reboots automatically by default.  To get [Drone](https://github.com/drone/drone) to startup on boot, I [wrote a systemd unit file](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/).
+By default, CoreOS updates itself automatically and reboots.  To ensure that [Drone](https://github.com/drone/drone) starts up upon reboot, you can write a [systemd unit file](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/).

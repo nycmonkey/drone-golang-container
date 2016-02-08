@@ -5,5 +5,5 @@
 FROM gliderlabs/alpine:3.3
 MAINTAINER nycmonkey@gmail.com
 ENV GOPATH /usr/lib/go
-RUN apk update && apk upgrade && apk add ca-certificates git openssh-client go
+RUN apk update && apk upgrade && apk add ca-certificates git openssh-client bash go
 RUN go version
